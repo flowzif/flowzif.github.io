@@ -11,10 +11,11 @@
   <h3>Name : <xsl:value-of select="foaf:name"/></h3>
   <h3>Description : <xsl:value-of select="dc:description"/></h3>
   <h3> Links : </h3>
-  <ul> <xsl:for-each select="foaf:account">
-    <li><xsl:value-of select="foaf:name"/> : 
-    </li>
-  </xsl:for-each></ul>    
+  <ul> 
+    <xsl:for-each select="foaf:account/foaf:OnlineAccount">
+      <li><xsl:value-of select="foaf:name"/> : </li>
+    </xsl:for-each>
+  </ul>    
   </body>
   </html>
 </xsl:template>
