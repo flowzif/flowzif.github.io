@@ -13,7 +13,7 @@
   <h3> Links : </h3>
   <ul> 
     <xsl:for-each select="foaf:account">
-      <li><xsl:value-of select="foaf:OnlineAccount/foaf:name"/> : <a href="#"><xsl:value-of select="foaf:OnlineAccount/foaf:page/@rdf:resource"/></a>
+      <li><xsl:value-of select="foaf:OnlineAccount/foaf:name"/> : <a href="#"><xsl:value-of select="foaf:OnlineAccount/foaf:page"/></a>
       </li>
     </xsl:for-each>
   </ul>    
