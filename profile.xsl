@@ -17,7 +17,7 @@
          <xsl:value-of select="foaf:page/@rdf:resource"/>
       </a>
       </li>
-  </ul>    
+  </xsl:for-each></ul>    
   </body>
   </html>
 </xsl:template>
