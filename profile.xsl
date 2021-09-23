@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
   <html>
@@ -11,12 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>Foaf attribute</th>
       <th>Value</th>
     </tr>
-    <xsl:for-each select="foaf:Person">
-    <tr>
-      <td><xsl:value-of select="foaf:name"/></td>
-      <td>test</td>
-    </tr>
-    </xsl:for-each>
+    
   </table>
   </body>
   </html>
