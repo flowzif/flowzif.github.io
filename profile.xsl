@@ -15,7 +15,9 @@
 
     <li><xsl:value-of select="foaf:name"/> : <a href="{foaf:page/@rdf:resource}">
          <xsl:value-of select="foaf:page/@rdf:resource"/>
-      </a></li>
+      </a>
+      </li>
+  </ul>    
   </body>
   </html>
 </xsl:template>
