@@ -10,12 +10,6 @@
       <th>Foaf attribute</th>
       <th>Value</th>
     </tr>
-    <xsl:for-each select="foaf:Person">
-    <tr>
-      <td><xsl:value-of select="foaf:name"/></td>
-      <td>test</td>
-    </tr>
-    </xsl:for-each>
   </table>
   </body>
   </html>
