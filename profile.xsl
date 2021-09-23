@@ -13,10 +13,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>Foaf attribute</th>
       <th>Value</th>
     </tr>
-    <xsl:for-each select="">
+    <xsl:for-each select="foaf:Person">
     <tr>
-      <td><xsl:value-of select="title"/></td>
-      <td><xsl:value-of select="artist"/></td>
+      <td><xsl:value-of select="foaf:name"/></td>
+      <td>test</td>
     </tr>
     </xsl:for-each>
   </table>
