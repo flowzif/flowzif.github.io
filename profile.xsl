@@ -12,11 +12,8 @@
   <h3>Description : <xsl:value-of select="dc:description"/></h3>
   <h3> Links : </h3>
   <ul> <xsl:for-each select="foaf:account">
-
-    <li><xsl:value-of select="foaf:name"/> : <a href="{foaf:page/@rdf:resource}">
-         <xsl:value-of select="foaf:page/@rdf:resource"/>
-      </a>
-      </li>
+    <li><xsl:value-of select="foaf:name"/> : 
+    </li>
   </xsl:for-each></ul>    
   </body>
   </html>
