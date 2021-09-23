@@ -16,7 +16,7 @@
     <foaf:Person rdf:about="#me">
         <foaf:name>Florian Rouillon</foaf:name>
         <foaf:givenname>Florian</foaf:givenname>
-        <foaf:familyName>Rouillon</foaf:family_name>
+        <foaf:familyName>Rouillon</foaf:familyName>
         <foaf:gender>male</foaf:gender>
         <foaf:homepage rdf:resource="https://flowzif.github.io"/>
         <dc:description xml:lang="fr">Etudiant en Master informatique - Architecte Logiciel à La Rochelle</dc:description>
