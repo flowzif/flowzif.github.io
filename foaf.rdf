@@ -7,15 +7,10 @@
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
         >
         
-    <foaf:PersonalProfileDocument rdf:about="#me">
-        <rdfs:label>Florian Rouillon FOAF profile</rdfs:label>
-        <foaf:primaryTopic rdf:nodeID="#me"/>
-        <foaf:maker rdf:resource="#me"/>
-        <foaf:primaryTopic rdf:resource="#me"/>
-    </foaf:PersonalProfileDocument>
-
+     
     <foaf:Person rdf:about="#me">
         <foaf:name>Florian Rouillon</foaf:name>
         <foaf:givenname>Florian</foaf:givenname>
@@ -24,6 +19,15 @@
         <dc:description xml:lang="fr">Etudiant en Master informatique - Architecte Logiciel à La Rochelle</dc:description>
 
     </foaf:Person>
+
+    <foaf:account>
+            <foaf:OnlineAccount rdf:about="#me-github">
+                <foaf:name>GitHub</foaf:name>
+                <foaf:accountServiceHomepage rdf:resource="https://github.com/"/>
+                <foaf:page rdf:resource="https://github.com/flowzif"/>
+                <foaf:accountName>Flowzif</foaf:accountName>
+            </foaf:OnlineAccount>
+        </foaf:account>
 
 
 </rdf:RDF>
