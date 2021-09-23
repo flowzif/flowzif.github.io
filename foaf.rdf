@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> ]>
+
+    <rdf:RDF 
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        >
+        
+    <foaf:PersonalProfileDocument rdf:about="#me">
+        <rdfs:label>Florian Rouillon FOAF profile</rdfs:label>
+        <foaf:primaryTopic rdf:nodeID="#me"/>
+        <foaf:maker rdf:resource="#me"/>
+        <foaf:primaryTopic rdf:resource="#me"/>
+    </foaf:PersonalProfileDocument>
+
+    <foaf:Person rdf:about="#me">
+        <foaf:name>Florian Rouillon</foaf:name>
+        <foaf:givenname>Florian</foaf:givenname>
+        <foaf:family_name>Rouillon</foaf:family_name>
+        <foaf:homepage rdf:resource="https://flowzif.github.io"/>
+        <dc:description xml:lang="fr">Etudiant en Master informatique - Architecte Logiciel à La Rochelle</dc:description>
+
+    </foaf:Person>
+
+
+</rdf:RDF>
