@@ -10,7 +10,6 @@
       <th>Foaf attribute</th>
       <th>Value</th>
     </tr>
-    
   </table>
   </body>
   </html>
