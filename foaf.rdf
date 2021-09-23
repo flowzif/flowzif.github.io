@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> ]>
@@ -14,11 +17,10 @@
     <foaf:Person rdf:about="#me">
         <foaf:name>Florian Rouillon</foaf:name>
         <foaf:givenname>Florian</foaf:givenname>
-        <foaf:family_name>Rouillon</foaf:family_name>
+        <foaf:familyName>Rouillon</foaf:family_name>
+        <foaf:gender>male</foaf:gender>
         <foaf:homepage rdf:resource="https://flowzif.github.io"/>
         <dc:description xml:lang="fr">Etudiant en Master informatique - Architecte Logiciel à La Rochelle</dc:description>
-
-    </foaf:Person>
 
     <foaf:account>
             <foaf:OnlineAccount rdf:about="#me-github">
@@ -27,7 +29,18 @@
                 <foaf:page rdf:resource="https://github.com/flowzif"/>
                 <foaf:accountName>Flowzif</foaf:accountName>
             </foaf:OnlineAccount>
-        </foaf:account>
+    </foaf:account>
 
+    <foaf:account>
+            <foaf:OnlineAccount rdf:about="#me-linkedin">
+                <foaf:name>LinkedIn</foaf:name>
+                <foaf:accountServiceHomepage rdf:resource="http://www.linkedin.com/"/>
+                <foaf:page rdf:resource="https://www.linkedin.com/in/florian-rouillon-070098181"/>
+                <foaf:accountName>florian rouillon</foaf:accountName>
+            </foaf:OnlineAccount>
+    </foaf:account>
 
+    <foaf:interest rdfs:label="Tennis de Table" dc:title="Tennis de table" rdf:resource="http://dbpedia.org/resource/Tennis_de_table"/>
+
+    </foaf:Person>
 </rdf:RDF>
