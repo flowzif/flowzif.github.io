@@ -3,6 +3,7 @@
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
 
 <xsl:template match="foaf:Person">
@@ -14,10 +15,16 @@
   <h3> Links : </h3>
   <ul> 
     <xsl:for-each select="foaf:account">
-      <li><xsl:value-of select="foaf:OnlineAccount/foaf:name"/> : <a href="#"><xsl:value-of select="foaf:OnlineAccount/foaf:page/@rdf:resource"/></a>
+      <li><xsl:value-of select="foaf:OnlineAccount/foaf:name"/> : <a href="{foaf:OnlineAccount/foaf:page/@rdf:resource}"><xsl:value-of select="foaf:OnlineAccount/foaf:page/@rdf:resource"/></a>
       </li>
     </xsl:for-each>
   </ul>    
+  <h3>Centres d'Interet : </h3>
+  <ul> 
+    <xsl:for-each select="foaf:interest">
+      <li><xsl:value-of select="@dc:title"/></li>
+    </xsl:for-each>
+  </ul>
   </body>
   </html>
 </xsl:template>
